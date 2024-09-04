@@ -34,3 +34,28 @@ ROC-AUC: Площадь под кривой ошибок (ROC-кривая), и�
 | **Accuracy**     |      0.89      |    0.8741       |    0.8658      |
 | **F1-мера**      |      0.89      |     0.87        |      0.87      |
 | **ROC-AUC**      |      0.96      |     0.94        |      0.93      |
+
+### 
+Структура web-app :
+
+flask_project/
+├── app.py
+├── statistics.py
+├── sentimentation.py
+├── clean_text.py
+├── model.keras
+├── tfidf_vectorizer.pkl
+├── uploads/
+│   └── (uploaded CSV files will be saved here)
+├── processed/
+│   └── (processed CSV files will be saved here)
+└── static/
+    └── images/
+        └── киберпанк.jpg
+└── templates/
+    └── index.html
+    └── statistics.html
+
+In order to run the program : 
+1. You need to download the web-app
+2. python app.py
